@@ -7,14 +7,14 @@ public class binarySearch {
         int start = 0, end = numbers.length - 1;
         while (start <= end) {
             int mid = (start + end) / 2;
-            //COMPARISION
-            if (numbers[mid] == key) { //FOUND
+        
+            if (numbers[mid] == key) { 
                 return mid;
             }
-            if (numbers[mid] < key) {   //RIGHT
+            if (numbers[mid] < key) {   
                 start = mid + 1;
 
-            } else  {                  //LEFT
+            } else  {                  
                 end = mid - 1;
             }
         }
